@@ -1,0 +1,108 @@
+/* Botón con flecha en la franja de Sistema de Particiones */
+.toggle-arrow-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+  margin-top: -5px;
+}
+
+.toggle-arrow-btn:hover {
+  color: #ccc;
+}
+
+/* El resto del estilo se mantiene igual */
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-header {
+  font-size: 26px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.partition-header {
+  font-size: 26px;
+  text-align: center;
+  background-color: #28a745;
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.disk-row, .partition-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.disco, .partitions-container {
+  background-color: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  margin: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.disco img, .partitions-container img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.particion {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .disk-row, .partition-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .disco, .partitions-container {
+    width: 90%;
+  }
+}
+
+.partitions-container {
+  background-color: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  margin: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.particion {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: left; /* Alineación del texto a la izquierda para mejor legibilidad */
+}
+
+.particion p {
+  margin: 5px 0; /* Espaciado uniforme entre los párrafos */
+}
+
